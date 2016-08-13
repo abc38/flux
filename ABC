@@ -1,0 +1,10 @@
+var flux = require('flux');
+
+flux.acquire('DNV SESAM', function(err) {
+    if (err) {
+        console.log('there was an error: ' + err.message);
+    }
+    else {
+        console.log('ubuntu torrent downloaded!');
+    }
+});
